@@ -3,6 +3,7 @@ import ContactList from 'components/ContactList/ContactList';
 import Filter from 'components/Filter/Filter';
 import Error from 'components/Error/Error';
 import Loader from 'components/Loader/Loader';
+import { Helmet } from 'react-helmet';
 
 import {
   getContact,
@@ -31,7 +32,9 @@ const Contacts = () => {
   });
   return (
     <main>
-      <h1>Phonebook</h1>
+      <Helmet>
+        <title>Phonebook</title>
+      </Helmet>
       <ContactForm />
 
       {isLoading && <Loader />}
@@ -40,7 +43,7 @@ const Contacts = () => {
 
       {stateContacts.length > 0 && <Filter nameForFind={stateFilter} />}
 
-      <h2>Contact List </h2>
+      <h2>Contacts </h2>
       {visibleContacts.length > 0 ? (
         <ContactList contacts={visibleContacts} />
       ) : (

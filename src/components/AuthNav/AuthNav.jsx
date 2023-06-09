@@ -10,7 +10,7 @@ const StyledLink = styled(NavLink)`
 
 const AuthNav = () => {
   return (
-    <div class={css.authNavigation}>
+    <div className={css.authNavigation}>
       <StyledLink className={css.link} to="/register">
         Register
       </StyledLink>
