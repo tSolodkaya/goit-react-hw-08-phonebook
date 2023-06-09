@@ -6,12 +6,12 @@ import AppBar from 'components/AppBar/AppBar';
 
 const Layout = () => {
   return (
-    <main>
+    <div>
       <AppBar />
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
-    </main>
+    </div>
   );
 };
 

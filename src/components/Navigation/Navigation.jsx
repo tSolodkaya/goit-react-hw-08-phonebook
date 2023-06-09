@@ -1,16 +1,23 @@
 import { NavLink } from 'react-router-dom';
 import css from './Navigation.module.css';
+import styled from 'styled-components';
+
+const StyledLink = styled(NavLink)`
+  &.active {
+    border-bottom: 3px solid #7fffd4;
+  }
+`;
 
 const Navigation = () => {
   return (
     <nav>
-      <NavLink className={css.link} to="/">
+      <StyledLink className={css.link} to="/">
         Home
-      </NavLink>
+      </StyledLink>
 
-      <NavLink className={css.link} to="/contacts">
+      <StyledLink className={css.link} to="/contacts">
         Contacts
-      </NavLink>
+      </StyledLink>
     </nav>
   );
 };

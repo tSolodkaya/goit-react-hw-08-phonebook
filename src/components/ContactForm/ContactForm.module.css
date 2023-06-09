@@ -26,10 +26,14 @@
   padding: 10px 15px;
   margin: 0 auto;
   border: none;
-  background-color: aquamarine;
+  background-color: #7fffd4;
   border-radius: 15px;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 900;
-  color: white;
+  color: #ffffff;
+  cursor: pointer;
+}
+.addButton:hover {
+  background-color: #70e0bb;
 }

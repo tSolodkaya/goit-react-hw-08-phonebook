@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.username {
+  font-size: 20px;
+  margin: 0;
+}
+
+.logoutBtn {
+  display: block;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #7fffd4;
+  cursor: pointer;
+  margin-left: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.logoutBtn:hover {
+  background-color: #70e0bb;
+}

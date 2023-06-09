@@ -4,10 +4,15 @@ import Filter from 'components/Filter/Filter';
 import Error from 'components/Error/Error';
 import Loader from 'components/Loader/Loader';
 
-import { getContact, getError, getFilter, getIsLoading } from 'redux/selectors';
+import {
+  getContact,
+  getError,
+  getFilter,
+  getIsLoading,
+} from 'redux/contacts/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchContacts } from 'redux/operations';
+import { fetchContacts } from 'redux/contacts/operations';
 import NoContact from 'components/NoContact/NoContact';
 
 const Contacts = () => {
@@ -25,7 +30,7 @@ const Contacts = () => {
     return contact.name.toLowerCase().includes(normilizedFilter);
   });
   return (
-    <div>
+    <main>
       <h1>Phonebook</h1>
       <ContactForm />
 
@@ -41,7 +46,7 @@ const Contacts = () => {
       ) : (
         <NoContact />
       )}
-    </div>
+    </main>
   );
 };
 

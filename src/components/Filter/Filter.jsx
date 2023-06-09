@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { filterContacts } from '../../redux/contactSlice';
+import { filterContacts } from '../../redux/contacts/contactSlice';
 import css from './Filter.module.css';
 
 const Filter = ({ nameForFind }) => {

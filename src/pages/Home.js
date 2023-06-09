@@ -1,9 +1,7 @@
+import Welcome from 'components/Welcome/Welcome';
+
 const Home = () => {
-  return (
-    <div>
-      <h1>Contacts welcome page</h1>
-    </div>
-  );
+  return <Welcome text="Welcome to your personal contacts" />;
 };
 
 export default Home;
