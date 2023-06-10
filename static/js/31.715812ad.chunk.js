@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[31],{3031:function(e,t,r){r.r(t),r.d(t,{default:function(){return a}});var c={},n=r(3329),o=function(e){var t=e.text;return(0,n.jsx)("div",{className:c.hero,children:(0,n.jsx)("h1",{classNAme:c.welcomeText,children:t})})},a=function(){return(0,n.jsx)(o,{text:"Welcome to your personal contacts"})}}}]);
-//# sourceMappingURL=31.715812ad.chunk.js.map
