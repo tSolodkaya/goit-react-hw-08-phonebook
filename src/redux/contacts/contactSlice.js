@@ -37,6 +37,7 @@ const contactSlice = createSlice({
       state.contacts.items = action.payload;
     },
     [fetchContacts.rejected]: handleRejected,
+
     [addContact.pending]: handlePending,
     [addContact.fulfilled](state, action) {
       state.contacts.isLoading = false;
@@ -44,6 +45,7 @@ const contactSlice = createSlice({
       state.contacts.items.push(action.payload);
     },
     [addContact.rejected]: handleRejected,
+
     [deleteContact.pending]: handlePending,
     [deleteContact.fulfilled](state, action) {
       state.contacts.isLoading = false;

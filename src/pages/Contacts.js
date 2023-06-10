@@ -10,7 +10,7 @@ import {
   getError,
   getFilter,
   getIsLoading,
-} from 'redux/contacts/selectors';
+} from '../redux/contacts/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/contacts/operations';
@@ -21,11 +21,13 @@ const Contacts = () => {
   const stateFilter = useSelector(getFilter);
   const isLoading = useSelector(getIsLoading);
   const isError = useSelector(getError);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
+
   const normilizedFilter = stateFilter.toLowerCase();
   const visibleContacts = stateContacts.filter(contact => {
     return contact.name.toLowerCase().includes(normilizedFilter);

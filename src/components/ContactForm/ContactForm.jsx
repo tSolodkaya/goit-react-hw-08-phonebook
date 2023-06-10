@@ -32,13 +32,14 @@ const ContactForm = () => {
   const handleSubmit = event => {
     event.preventDefault();
 
-    const isContactInBook = stateContacts.some(
-      contact => contact.name.toLowerCase() === name.toLowerCase()
-    );
+    const isContactInBook = stateContacts
+      ? stateContacts.some(
+          contact => contact.name.toLowerCase() === name.toLowerCase()
+        )
+      : false;
     if (isContactInBook) {
       return Notiflix.Notify.failure(`${name} is already in contacts`);
     }
-    console.log(stateContacts);
 
     const contact = {
       name: name,
