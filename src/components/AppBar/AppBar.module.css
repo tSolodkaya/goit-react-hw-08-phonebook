@@ -1,4 +1,6 @@
 .header {
+  width: 960px;
+  margin: 0 auto;
   padding: 30px 0;
   display: flex;
   flex-wrap: wrap;

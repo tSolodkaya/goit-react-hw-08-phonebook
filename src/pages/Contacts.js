@@ -35,8 +35,9 @@ const Contacts = () => {
   return (
     <main>
       <Helmet>
-        <title>Phonebook</title>
+        <title>Contacts</title>
       </Helmet>
+      <h2>Phonebook</h2>
       <ContactForm />
 
       {isLoading && <Loader />}
